@@ -11,5 +11,10 @@ namespace NationalParksLinq.Models
         public int AreaInAcres { get; set; }
         public int AnnualVisitors { get; set; }
         public int YearFounded { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Name} {State} {AreaInAcres} {AnnualVisitors} {YearFounded}";  
+        }
     }
 }
