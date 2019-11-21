@@ -13,7 +13,7 @@ namespace NationalParksLinq
 
         public static void SelectLinq()
         {
-            //result = _nationalParks.Select(p => p).ToList();
+            //var result = _nationalParks.Select(p => p).ToList();
             //result.ForEach(Console.WriteLine);
 
             //var result = _nationalParks.Select(p => p.Name).ToList();
@@ -22,8 +22,23 @@ namespace NationalParksLinq
             //var result = _nationalParks.Select(p => p.Name.Length).ToList();
             //result.ForEach(Console.WriteLine);
 
-            var result = _nationalParks.Select(p => $"{p.Name}, {p.State}").ToList();
-            result.ForEach(Console.WriteLine);
+            //var result = _nationalParks.Select(p => $"{p.Name}, {p.State}").ToList();
+            //result.ForEach(Console.WriteLine);
+        }
+
+        public static void WhereLinq()
+        {
+            //var result = _nationalParks.Where(park => true).ToList();
+            //result.ForEach(Console.WriteLine);
+
+            //var result = _nationalParks.Where(park => park.State == "California").ToList();
+            //result.ForEach(Console.WriteLine);
+
+            //var result = _nationalParks.Where(park => park.State == "California" && park.YearFounded > 2020).ToList();
+            //result.ForEach(Console.WriteLine);
+
+            //var result = _nationalParks.Where(park => park.YearFounded > 1950 && park.YearFounded < 1980).ToList();
+            //result.ForEach(Console.WriteLine);
         }
     }
 }

@@ -6,7 +6,8 @@ namespace NationalParksLinq
     {
         static void Main(string[] args)
         {
-            ProjectionQueries.SelectLinq();
+            //ProjectionQueries.SelectLinq();
+            //ProjectionQueries.WhereLinq();
         }
     }
 }
