@@ -34,10 +34,14 @@ namespace NationalParksLinq
             //var result = _nationalParks.Where(park => park.State == "California").ToList();
             //result.ForEach(Console.WriteLine);
 
-            //var result = _nationalParks.Where(park => park.State == "California" && park.YearFounded > 2020).ToList();
+            //var result = _nationalParks
+            //    .Where(park => park.State == "California" 
+            //    && park.YearFounded > 2020).ToList();
             //result.ForEach(Console.WriteLine);
 
-            //var result = _nationalParks.Where(park => park.YearFounded > 1950 && park.YearFounded < 1980).ToList();
+            //var result = _nationalParks
+            //    .Where(park => park.YearFounded > 1950
+            //    && park.YearFounded < 1980).ToList();
             //result.ForEach(Console.WriteLine);
         }
     }
