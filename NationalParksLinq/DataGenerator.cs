@@ -87,7 +87,7 @@ namespace NationalParksLinq
                 },
                 new NationalPark
                 {
-                    Name = "Capotal Reef",
+                    Name = "Capital Reef",
                     State = "Utah",
                     AreaInAcres = 241904,
                     AnnualVisitors = 1227627,

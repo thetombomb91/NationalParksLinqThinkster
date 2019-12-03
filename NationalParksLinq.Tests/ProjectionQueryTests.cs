@@ -6,7 +6,7 @@ using System.Linq;
 namespace NationalParksLinq.Tests
 {
     [TestFixture]
-    [Ignore("")]
+    //[Ignore("")]
     public class ProjectionQueryTests
     {
         public List<NationalPark> NationalParks { get; set; }
@@ -58,7 +58,9 @@ namespace NationalParksLinq.Tests
         [Test]
         public void TestReturnAllNationalParksOnWestCoast()
         {
-            var result = NationalParks.Where(p => p.State == "California" || p.State == "Oregon" || p.State == "Washington").ToList();
+            var result = NationalParks.Where(p => p.State == "California"
+            || p.State == "Oregon"
+            || p.State == "Washington").ToList();
 
             Assert.AreEqual(13, result.Count());
             Assert.AreEqual("Channel Islands", result[0].Name);
@@ -75,7 +77,8 @@ namespace NationalParksLinq.Tests
         [Test]
         public void TestReturnAllNationalParksSmallerThan50000AcresAndMoreThan250000Visitors()
         {
-            var result = NationalParks.Where(p => p.AreaInAcres < 50000 && p.AnnualVisitors > 250000).ToList();
+            var result = NationalParks.Where(p => p.AreaInAcres < 50000
+            && p.AnnualVisitors > 250000).ToList();
 
             Assert.AreEqual(10, result.Count());
             Assert.AreEqual("Acadia", result[0].Name);
