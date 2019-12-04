@@ -9,20 +9,29 @@ namespace NationalParksLinq
     internal class PagingQueries
     {
         private static List<NationalPark> _nationalParks = DataGenerator.GetNationalParkData();
-
+        
         public static void ElementAtLinq()
         {
             //var thirdElement = _nationalParks.ElementAt(2);
-            //Console.WriteLine(thirdElement);
             //thirdElement.AreaInAcres = 5;
-            //Console.WriteLine(_nationalParks);
+            ////Console.WriteLine(thirdElement);
+            //_nationalParks.ForEach(Console.WriteLine);
+        }
 
-            //var californiaParks = _nationalParks.Where(p => p.State =="California");
-            //var singleCaliforniaPark = californiaParks.ElementAt(2);
-            //Console.WriteLine(singleCaliforniaPark);
+        public static void FirstLinq()
+        {
+            //var firstElement = _nationalParks.First();
+            //Console.WriteLine(firstElement);
 
-            //var singleCaliforniaPark = _nationalParks.Where(p => p.State == "California").ElementAt(2);
-            //Console.WriteLine(singleCaliforniaPark);
+            //var firstElement = _nationalParks.FirstOrDefault();
+            //Console.WriteLine(firstElement);
+
+            //var firstElement = _nationalParks.Where(p => p.State == "Illinois").First();
+            //Console.WriteLine(firstElement);
+
+            var firstElement = _nationalParks.Where(p => p.State == "Illinois").FirstOrDefault();
+            Console.WriteLine(firstElement);
+
         }
 
     }
