@@ -18,21 +18,16 @@ namespace NationalParksLinq
             //_nationalParks.ForEach(Console.WriteLine);
         }
 
-        public static void FirstLinq()
+        public static void FirstLastLinq()
         {
-            //var firstElement = _nationalParks.First();
-            //Console.WriteLine(firstElement);
-
             //var firstElement = _nationalParks.FirstOrDefault();
             //Console.WriteLine(firstElement);
 
-            //var firstElement = _nationalParks.Where(p => p.State == "Illinois").First();
-            //Console.WriteLine(firstElement);
+            var illinoisParks = _nationalParks.Where(p => p.State == "Illinois").FirstOrDefault();
 
-            var firstElement = _nationalParks.Where(p => p.State == "Illinois").FirstOrDefault();
-            Console.WriteLine(firstElement);
+            //var lastElement = _nationalParks.LastOrDefault();
+            //Console.WriteLine(lastElement);
 
         }
-
     }
 }
