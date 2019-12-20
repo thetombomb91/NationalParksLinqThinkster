@@ -8,9 +8,12 @@ namespace NationalParksLinq
         {
             //ProjectionQueries.SelectLinq();
             //ProjectionQueries.WhereLinq();
+
             //PagingQueries.ElementAtLinq();
             //PagingQueries.FirstLastLinq();
-            SetQueries.AnyAndAllLinq();
+
+            //SetQueries.AnyAndAllLinq();
+            SetQueries.ExceptLinq();
         }
     }
 }
